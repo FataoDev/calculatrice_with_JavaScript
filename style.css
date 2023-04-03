@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 15px;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 4%;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px 3px rgb(85, 85, 91);
+}
+.titre{
+    color: red;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+button{
+    color: white;
+    width: 5em;
+    margin: .1em;
+    height: 3em;
+    background-color: rgb(93, 93, 223);
+    border-color: white;
+}
+button:hover{
+    background-color: rgb(166, 166, 234);
+}
+
+.calculation, .answer{
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: end;
+    color: white;
+    background-color: rgb(53, 46, 46);
+    height: 2.3em;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+}
