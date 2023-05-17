@@ -1,47 +1,98 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(33, 32, 32);
 }
+
+
+
+
 .container{
-    background-color: bisque;
+    background-color: rgb(45, 171, 224);
     padding: 15px;
     border-radius: 15px;
-    width: 25%;
+    width: 180px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
-    margin-top: 4%;
-    border: 3px solid black;
-    box-shadow: 0px 0px 10px 3px rgb(85, 85, 91);
+    margin-top: 50px;
+    border: white 2px solid;
+    /* box-shadow: 0px 0px 10px 3px rgb(237, 131, 11); */
 }
 .titre{
-    color: red;
-    text-align: center;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
 }
+
 button{
     color: white;
-    width: 5em;
+    width: 30px;
     margin: .1em;
-    height: 3em;
-    background-color: rgb(93, 93, 223);
+    height: 26px;
+    font-size: 9px;
+    text-align: center;
+    /* border: black 1px solid; */
+    /* background-color: rgb(93, 93, 223); */
+    background-color: rgb(10, 10, 133);
     border-color: white;
-}
-button:hover{
-    background-color: rgb(166, 166, 234);
+    border-radius: 15px;
+    cursor: pointer;
 }
 
+#clear{
+    background-color: red;
+}
+
+#back{
+    background-color: rgb(107, 107, 105);
+}
+
+
+/* button:hover{
+    background-color: rgb(166, 166, 234);
+} */
+
 .calculation, .answer{
-    padding-right: 5px;
-    padding-left: 5px;
-    text-align: end;
+    align-items: center;
+    padding: 0 5px;
     color: white;
     background-color: rgb(53, 46, 46);
     height: 2.3em;
     margin-right: 5px;
-    margin-bottom: 1px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+}
+
+.calculation{
+    text-align: start;
+}
+.answer{
+    text-align: end;
+}
+
+.keys{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.btn-head{
+    text-align: center;
+    width: 24px;
+    font-size: 8px;
+    margin: .1em;
+    height: 22px;
+}
+
+#date{
+    background-color: rgb(53, 46, 46);
+    background-clip: border-box;
+    padding: 0 7px;
     border-radius: 5px;
 }
