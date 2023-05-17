@@ -14,7 +14,6 @@ let minute = dat.getMinutes();
 let heure = dat.getHours();
 date.innerHTML = `${heure} : ${minute}`;
 
-const ajout = 0;
 tap.forEach((val) => {
   val.addEventListener("click", () => {
     if (answer.innerHTML != "") {
