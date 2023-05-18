@@ -9,7 +9,7 @@ body{
 
 .container{
     background-color: rgb(45, 171, 224);
-    padding: 15px;
+    padding: 12px;
     border-radius: 15px;
     width: 180px;
     display: block;
@@ -31,10 +31,24 @@ body{
     font-weight: 600;
 }
 
+.titre div:nth-child(1){
+    margin-left:-20px;
+    margin-top:5px;
+    display:flex;
+    justify-content:left;
+    align-items:start;
+    font-size:10px;
+}
+
+
 button{
+    justify-content:flex;
+    padding:0;
+    align-items:center;
+    justify-content:center;
     color: white;
-    width: 30px;
-    margin: .1em;
+    width: 30.8px;
+    margin: 1px;
     height: 26px;
     font-size: 9px;
     text-align: center;
@@ -42,8 +56,12 @@ button{
     /* background-color: rgb(93, 93, 223); */
     background-color: rgb(10, 10, 133);
     border-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight:650;
+}
+.number{
+    font-size:15px;
 }
 
 #clear{
@@ -51,7 +69,7 @@ button{
 }
 
 #back{
-    background-color: rgb(107, 107, 105);
+    background-color: rgb(53, 46, 46);
 }
 
 
@@ -65,35 +83,67 @@ button{
     color: white;
     background-color: rgb(53, 46, 46);
     height: 2.3em;
-    margin-right: 5px;
-    margin-bottom: -15px;
     border-radius: 5px;
+}
+
+.calculation1{
+    background-color:transparent;
+    border:none;
+    color:white;
+    outline:none;
+    text-align: start;
 }
 
 .calculation{
+    margin-bottom: -15px;
     padding-top: 10px;
-    text-align: start;
+    overflow:auto;
 }
 .answer{
-    text-align: end;
+    display:flex;
+    text-align: bottom;
+    justify-content: end;
 }
 
-.keys{
-    margin-top: 25px;
-    margin-bottom: 10px;
+.keys1{
+    margin-top: 15px;
+}
+.keys2{
+    margin-top: 20px;
 }
 
 .btn-head{
-    text-align: center;
-    width: 24px;
+    width: 25px;
     font-size: 8px;
     margin: .1em;
     height: 22px;
+    font-weight:550;
 }
 
 #date{
+    display:flex;
     background-color: rgb(53, 46, 46);
-    background-clip: border-box;
+    margin-right:-25px;
+    font-size:10px;
     padding: 0 7px;
+    align-items:center;
     border-radius: 5px;
+}
+
+.anim-heur{
+    text-align:center;
+    animation: anim-heur 1s infinite
+}
+
+
+@keyframes anim-heur{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }
