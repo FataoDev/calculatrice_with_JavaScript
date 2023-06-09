@@ -3,6 +3,7 @@
 //  Fonction de remplacement des valeur de calculer du champ de saisie
 
 function Remplace(expression) {
+  expression = expression.replace(/²/g, "**2");
   expression = expression.replace(/ln\(/g, "Math.log(");
   expression = expression.replace(/e\(/g, "Math.exp(");
   expression = expression.replace(/sin\(/g, "Math.sin(");
